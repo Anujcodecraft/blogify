@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HomePage</title>
+    <%- include('./partials/head') %>
+
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+    
+    <div class="container mt-3">
+        <h1 class="text-center mb-4" style="font-size: 2.5rem; font-weight: bold; color: #333;"><%= blogs.title %></h1>
+        <div class="text-center">
+            <img src="<%= blogs.coverimageurl %>" alt="Blog Cover" style="max-width: 90%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+        <div class="mt-4" style="font-size: 1.2rem; line-height: 1.8; color: #555; background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <pre style="white-space: pre-wrap; word-wrap: break-word; font-size: inherit; color: inherit; background-color: inherit; border: none;"><%= blogs.body %></pre>
+        </div>
+    </div>
+
+    
+   
+    <%- include('./partials/script') %>
+</body>
+</html>
